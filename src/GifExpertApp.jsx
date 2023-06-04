@@ -1,12 +1,28 @@
-export const GifExpertApp = () => {
-    return (
+import { useState } from "react"
 
-        /* titulo */
-        <h1>GifExpertApp</h1>
+export const GifExpertApp = () => {
+
+    const [categories, setCategories] = useState([ 'One Punch', 'Dragon Ball' ]); // Si dejamos un valor vacio este tendra un valor inicial de undefined
+
+    console.log(categories);
+    return (
+        <>
         
-        /* input */
-        
-        /* Listado de Gif */
-            /* Git Item */
+            {/* titulo */}
+            <h1>GifExpertApp</h1>
+            
+            {/* input */}
+            <ol>
+                {
+                    categories.map( category => {
+                        return <li key={ category }>{category}</li>
+                    })
+                }
+            </ol>
+            
+            {/* Listado de Gif */}
+                {/* Git Item */}
+
+        </>
     )
 }
