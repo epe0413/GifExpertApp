@@ -1,11 +1,12 @@
 import { useState } from "react"
+import { AddCategory } from "./components/AddCategory";
 
 export const GifExpertApp = () => {
 
     const [categories, setCategories] = useState([ 'One Punch', 'Dragon Ball' ]); // Si dejamos un valor vacio este tendra un valor inicial de undefined
 
     const onAddCategory = () => {
-        setCategories([...categories, 'Valorant']);
+        setCategories([ ...categories, 'Valorant' ]);
         // setCategories( cat => [ ...cat, 'Valorant']);
     }
 
@@ -17,6 +18,9 @@ export const GifExpertApp = () => {
             <h1>GifExpertApp</h1>
             
             {/* input */}
+            <AddCategory/>
+
+            {/* Listado de Gif */}
             <button
                 onClick={onAddCategory}
             >Agregar</button>
@@ -27,8 +31,6 @@ export const GifExpertApp = () => {
                     })
                 }
             </ol>
-            
-            {/* Listado de Gif */}
                 {/* Git Item */}
 
         </>
