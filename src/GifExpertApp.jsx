@@ -18,12 +18,11 @@ export const GifExpertApp = () => {
             <h1>GifExpertApp</h1>
             
             {/* input */}
-            <AddCategory/>
+            <AddCategory
+                setCategories={setCategories}
+            />
 
             {/* Listado de Gif */}
-            <button
-                onClick={onAddCategory}
-            >Agregar</button>
             <ol>
                 {
                     categories.map( category => {
