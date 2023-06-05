@@ -12,8 +12,6 @@ export const GifExpertApp = () => {
         setCategories([ newCategory, ...categories ]);
         // setCategories( cat => [ ...cat, 'Valorant']);
     }
-
-    console.log(categories);
     return (
         <>
             <h1>GifExpertApp</h1>
