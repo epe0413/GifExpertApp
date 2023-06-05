@@ -4,7 +4,7 @@ import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState([ 'One Punch', 'Dragon Ball' ]); // Si dejamos un valor vacio este tendra un valor inicial de undefined
+    const [categories, setCategories] = useState([ 'One Punch' ]); // Si dejamos un valor vacio este tendra un valor inicial de undefined
 
     const onAddCategory = (newCategory) => {
 
