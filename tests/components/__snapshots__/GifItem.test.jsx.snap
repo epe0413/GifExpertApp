@@ -7,7 +7,7 @@ exports[`Pruebas a GifItem probar snapshot 1`] = `
   >
     <img
       alt="Titulo de imagen"
-      src="test de url"
+      src="http://gif.test/test"
     />
     <p>
       Titulo de imagen
